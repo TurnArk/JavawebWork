@@ -35,6 +35,7 @@ public class LoginFilter implements Filter {
                     filterChain.doFilter(request, response);//通过则继续执行login的doPost
                 }else{
                     response.sendRedirect(loginPath);
+
                 }
             }else{
                 response.sendRedirect(loginPath);
